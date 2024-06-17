@@ -1,0 +1,37 @@
+{
+  "name": "@repo/api",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./core": "./core.ts",
+    "./cross-platform-utils": "./cross-platform-utils/index.ts",
+    "./cross-platform-utils/types": "./cross-platform-utils/types.ts"
+  },
+  "scripts": {
+    "dev": "npx convex dev",
+    "gen": "npx convex codegen",
+    "deploy": "npx convex deploy",
+    "build": "echo 'Add build script here'",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'",
+    "f": "prettier --write . --ignore-path ../../.gitignore"
+  },
+  "dependencies": {
+    "@clerk/clerk-js": "^5.7.0",
+    "@clerk/clerk-sdk-node": "^5.0.11",
+    "@repo/eslint-config": "*",
+    "@repo/prettier-config": "*",
+    "@repo/typescript-config": "*",
+    "@upstash/ratelimit": "^1.2.1",
+    "@upstash/redis": "^1.31.5",
+    "convex": "^1.12.1",
+    "convex-ents": "^0.7.7",
+    "convex-helpers": "^0.1.41",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.11",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "cSpell.words": [
+    "Actionsheets",
+    "arrowicon",
+    "ayocodes",
+    "ciphertext",
+    "closeicon",
+    "codegen",
+    "crossplatform",
+    "hookform",
+    "mantine",
+    "offblack",
+    "offpink",
+    "offwhite",
+    "Passcode",
+    "ratelimit",
+    "stylez",
+    "Tailouured",
+    "Ttopic",
+    "Turborepo",
+    "typecheck",
+    "Wdya",
+    "xlcmsu"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "prettier.useEditorConfig": true,
+  "prettier.useTabs": false,
+  // "prettier.configPath": ".prettierrc",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

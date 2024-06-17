@@ -1,0 +1,27 @@
+{
+  "name": "@repo/mantine-config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./styles": "./mantine-styles.css"
+  },
+  "scripts": {
+    "dev": "echo 'Add dev script here'",
+    "build": "echo 'Add build script here'",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'"
+  },
+  "dependencies": {
+    "@mantine/charts": "^7.4.2",
+    "@mantine/core": "^7.4.2",
+    "@mantine/dates": "^7.4.2",
+    "@mantine/hooks": "^7.4.2",
+    "dayjs": "^1.11.10",
+    "recharts": "^2.10.4"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.33",
+    "postcss-preset-mantine": "^1.12.3",
+    "postcss-simple-vars": "^7.0.1"
+  }
+}

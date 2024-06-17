@@ -1,0 +1,33 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./tailwind.config.js": "./tailwind.config.js",
+    "./postcss.config.js": "./postcss.config.js",
+    "./styles": "./tailwind-styles.css",
+    "./utils": "./utils/index.ts",
+    "./rawTheme.js": "./rawTheme.js",
+    "./rawTheme.ts": "./rawTheme.ts",
+    "./rawJsonTheme": "./ rawTheme.json"
+  },
+  "scripts": {
+    "ts": "node ./scripts/generate-ts-raw-theme.js",
+    "json": "node ./scripts/gen-json.js",
+    "dev": "echo 'Add dev script here'",
+    "build": "echo 'Add build script here'",
+    "test": "echo 'Add test script here'",
+    "css": "node ./utils/generate-css-vars.js",
+    "lint": "echo 'Add lint script here'"
+  },
+  "dependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.33",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.1"
+  }
+}

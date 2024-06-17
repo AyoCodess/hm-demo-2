@@ -1,0 +1,25 @@
+{
+  "extends": "@repo/typescript-config/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-native",
+    "types": ["nativewind/types", "node"]
+  },
+  "typeRoots": ["./types/*"],
+  "include": [
+    "src",
+    "*.ts",
+    "index.tsx",
+    "*.js",
+    "env.d.ts",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "scripts/copy-design-system.js",
+    "scripts/incrementMinorVersion.js",
+    "scripts/incrementUpdateVersion.js"
+  ],
+  "exclude": ["node_modules"]
+}

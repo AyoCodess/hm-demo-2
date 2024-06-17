@@ -1,0 +1,52 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [
+    "**/.env.*local"
+  ],
+  "pipeline": {
+    "docs#build": {
+      "dependsOn": [],
+      "outputs": [
+        "apps/docs/.next/**",
+        "!apps/docs/.next/cache/**"
+      ]
+    },
+    "marketing-page#build": {
+      "dependsOn": [],
+      "outputs": [
+        "apps/marketing-page/.next/**",
+        "!apps/marketing-page/.next/cache/**"
+      ]
+    },
+    "super-admins#build": {
+      "dependsOn": [],
+      "outputs": [
+        "apps/superAdmins/.next/**",
+        "!apps/superAdmins/.next/cache/**"
+      ]
+    },
+    "server#build": {
+      "dependsOn": [],
+      "outputs": [
+        "apps/server/.next/**",
+        "!apps/server/.next/cache/**"
+      ]
+    },
+    "mobile#local-dev-a": {
+      "dependsOn": [],
+      "outputs": [
+        "apps/mobile/**",
+        "!apps/mobile/node_modules/**"
+      ]
+    },
+    "lint": {
+      "dependsOn": [
+        "^lint"
+      ]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
